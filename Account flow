@@ -1,0 +1,21 @@
+if ( requestBean.getText( ).equals( "1") {
+    response = "CON Enter account number \n"; 
+    return response;
+}
+ 
+if ( requestBean.getText( ).startsWith("1") && inputText.length.lenght==2) {
+
+    AccountBean accountBean = new AccountBean( ); 
+    accountBean.setBankcode(Util.getBankCode()); 
+    accountBean.setAccountnumber(inputText[1]);
+    
+    String accountdetail = ServiceHelper.resolveAccount(accountBean);
+    
+    if (accountdetail !=null && !accountdetail.isEmpty()) {   
+       response = "END Account Name is + accountdetail;
+       return response;
+    } else {
+       response = "END Could not resolve account, please try again!";
+       return response;
+    }
+}    
